@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>签小伴 · 隐私政策 / Privacy Policy</title>
+<style>
+  :root { --ink:#1d1f23; --muted:#5b616b; --line:#e4e6ea; --accent:#c8102e; --bg:#fff; --soft:#f6f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8e9ec; --muted:#a3a8b1; --line:#30333a; --accent:#ff5a6e; --bg:#16181c; --soft:#1f2227; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 "PingFang SC","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  .box { background: var(--soft); border-radius: 10px; padding: 14px 18px; margin: 16px 0; }
+  ul { padding-left: 22px; } li { margin: 4px 0; }
+  code { font-size: 14px; background: var(--soft); padding: 1px 5px; border-radius: 4px; word-break: break-all; }
+  a { color: var(--accent); }
+  .en { color: var(--ink); }
+  nav a { margin-right: 14px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>签小伴 · 申根签证助手 — 隐私政策</h1>
+<p class="meta">生效日期：2026-11-11 · 适用版本：0.9.6 及以后 · <a href="#en">English version below</a></p>
+
+<div class="box"><b>一句话：</b>签小伴不需要账号，不收集、不上传、不出售任何个人信息。它只在你自己的电脑上记住你选的国家、签证类型、“你的情况”里点选的选项和材料勾选进度。</div>
+
+<h2>1. 插件做什么</h2>
+<p>签小伴为申请申根签证的中国大陆申请人提供中文指导：按官方清单列出要准备的材料、记录准备进度；在荷兰、法国、德国（VIDEX）的官方在线申请表上，逐题显示中文翻译和填写说明。插件<b>不会替你填写表格</b>，所有内容都由你自己填写在官网上。</p>
+
+<h2>2. 保存在你电脑上的内容</h2>
+<p>只保存以下内容，存放在浏览器的本地存储（<code>chrome.storage.local</code>）里，不同步到其他设备，也不上传：</p>
+<ul>
+  <li>你选择的申请国家和签证类型（例如“法国 / 旅游”）；</li>
+  <li>“你的情况”问题里你点选的选项（例如“在职”“自费”），只保存选项代号，不保存任何文字输入；</li>
+  <li>材料清单里你勾选了哪些项目。</li>
+</ul>
+<p>插件还会把下载的公开指南文件缓存在浏览器里（见第 4 条），里面没有任何关于你的信息。</p>
+<p>你可以随时在插件“我的申请”页底部点“忘记并重新开始”清除记录，或者卸载插件，所有本地数据会一起删除。</p>
+
+<h2>3. 不收集的内容</h2>
+<ul>
+  <li>不保存、不上传你在官网表格里填写的内容（姓名、护照号、出生日期、地址、电话等）。插件读取表格上的<b>问题文字</b>来匹配中文说明；为了提醒常见错误（例如输入了汉字、日期格式不对、必填项还没填），会在页面里即时检查格式，检查只在你的浏览器里进行，结果不保存、不发送。</li>
+  <li>“转换地址”工具：你输入的中文地址只在本机转换成拼音格式，关闭后即清除，不保存，也不发送到任何地方。</li>
+  <li>没有账号、没有统计分析、没有广告、不使用 Cookie，不跟踪你访问的网页。</li>
+</ul>
+
+<h2>4. 网络请求</h2>
+<p>插件只发出一种网络请求：定期（约每 6 小时）下载一份公开的指南文件，用来更新材料清单和填写说明：</p>
+<p><code>https://visahelper.oss-cn-hongkong.aliyuncs.com/guidance.json</code></p>
+<p>这个请求不带 Cookie、不带任何标识或个人信息，与普通打开一个公开网页相同。文件存放在阿里云对象存储（香港），和所有网站服务器一样，存储服务可能会记录访问的 IP 地址等技术日志；我们不使用这些日志识别任何人。指南文件只包含文字和数据，不包含可执行代码。</p>
+
+<h2>5. 网站权限</h2>
+<p>插件只在以下官方签证网站上运行，用于在页面上显示中文说明：</p>
+<ul>
+  <li>荷兰：<code>consular.mfaservices.nl</code>、<code>login.consular.mfaservices.nl</code></li>
+  <li>法国：<code>*.france-visas.gouv.fr</code></li>
+  <li>德国：<code>videx.diplo.de</code></li>
+</ul>
+<p>插件里的官方链接（使馆、签证中心等）会在浏览器里正常打开，插件不会读取这些网站。</p>
+
+<h2>6. 与第三方共享</h2>
+<p>我们没有收集任何个人信息，所以不会与任何第三方共享或出售。</p>
+
+<h2>7. 儿童</h2>
+<p>插件不面向儿童，也不收集任何人的个人信息。</p>
+
+<h2>8. 政策变更</h2>
+<p>如果隐私做法有变化，会更新本页面和生效日期，并在插件更新说明中提示。</p>
+
+<h2>9. 联系方式</h2>
+<p>有问题或建议请发邮件：<a href="mailto:helloqianxiaoban@gmail.com">helloqianxiaoban@gmail.com</a></p>
+
+<div class="en" id="en">
+<h2 style="margin-top:48px">QianXiaoBan · Schengen Visa Helper — Privacy Policy</h2>
+<p class="meta">Effective: 2026-11-11 · Applies to version 0.9.6 and later</p>
+
+<div class="box"><b>In short:</b> no account, and no personal data is collected, uploaded or sold. The extension only remembers, on your own computer, the country and visa type you chose, the options you picked under “Your situation”, and which checklist items you ticked.</div>
+
+<h3>1. What the extension does</h3>
+<p>It gives Chinese-language guidance to applicants from mainland China applying for a Schengen visa: a list of documents based on official checklists with progress tracking, and Chinese translations and explanations for each question of the official online application forms of the Netherlands, France and Germany (VIDEX). It never fills in forms for you.</p>
+
+<h3>2. Data stored on your computer</h3>
+<ul>
+  <li>The country and visa type you selected;</li>
+  <li>the options you picked under “Your situation” (stored as option codes only — no free text);</li>
+  <li>which checklist items you ticked.</li>
+</ul>
+<p>These are kept in <code>chrome.storage.local</code>, are not synced and are never uploaded. The downloaded public guidance file (see 4) is also cached locally; it contains nothing about you. Use “忘记并重新开始” (Forget and start over) at the bottom of “我的申请” or uninstall it to delete everything.</p>
+
+<h3>3. Data not collected</h3>
+<ul>
+  <li>Nothing you type into the official forms (name, passport number, date of birth, address, phone, …) is stored or transmitted. The extension reads the question labels to show the matching explanation, and checks the format of an answer in the page (e.g. Chinese characters, date format, required field still empty) to warn about common mistakes; this check runs only in your browser and nothing is kept or sent.</li>
+  <li>The address converter turns a Chinese address into pinyin locally; the text is cleared when closed and is never stored or sent.</li>
+  <li>No accounts, analytics, ads or cookies; no tracking of your browsing.</li>
+</ul>
+
+<h3>4. Network requests</h3>
+<p>The only request the extension makes is to download a public guidance file about every 6 hours: <code>https://visahelper.oss-cn-hongkong.aliyuncs.com/guidance.json</code>. It is sent without cookies, identifiers or personal data. The file is hosted on Alibaba Cloud Object Storage (Hong Kong), which, like any web server, may keep technical access logs such as IP addresses; we do not use them to identify anyone. The file contains text and data only, no executable code.</p>
+
+<h3>5. Site access</h3>
+<p>The extension runs only on these official visa sites, to show explanations on the page: <code>consular.mfaservices.nl</code>, <code>login.consular.mfaservices.nl</code>, <code>*.france-visas.gouv.fr</code>, <code>videx.diplo.de</code>.</p>
+
+<h3>6. Sharing</h3>
+<p>No personal data is collected, so none is shared or sold.</p>
+
+<h3>7. Changes</h3>
+<p>Any change will be posted on this page with a new effective date.</p>
+
+<h3>8. Contact</h3>
+<p><a href="mailto:helloqianxiaoban@gmail.com">helloqianxiaoban@gmail.com</a></p>
+</div>
+</main>
+</body>
+</html>
